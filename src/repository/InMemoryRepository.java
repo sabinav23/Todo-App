@@ -27,7 +27,7 @@ public class InMemoryRepository implements IRepository{
 
     @Override
     public void toggleIsDone(int id){
-        for(Todo todo: todos){
+        for(Todo todo: this.todos){
             if(todo.getId() == id){
                 todo.setDone(!todo.isDone());
             }

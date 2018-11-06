@@ -1,6 +1,8 @@
 package model;
 
-public class Todo {
+import java.io.Serializable;
+
+public class Todo implements Serializable {
     private int id;
     private String description;
     private boolean isDone;
